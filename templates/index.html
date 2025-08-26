@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>BST Web Interface</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+<body>
+    <h1>Binary Search Tree Interface</h1>
+    
+    <form method="POST">
+        <input type="number" name="value" placeholder="Enter value">
+        <br><br>
+        <button type="submit" name="action" value="Insert">Insert</button>
+        <button type="submit" name="action" value="Delete">Delete</button>
+        <button type="submit" name="action" value="Search">Search</button>
+        <button type="submit" name="action" value="Inorder">Inorder</button>
+        <button type="submit" name="action" value="Preorder">Preorder</button>
+        <button type="submit" name="action" value="Postorder">Postorder</button>
+        <button type="submit" name="action" value="LevelOrder">Level-order</button>
+        <button type="submit" name="action" value="MinMax">Min/Max</button>
+        <button type="submit" name="action" value="FloorCeil">Floor/Ceil</button>
+        <button type="submit" name="action" value="SuccessorPredecessor">Successor/Predecessor</button>
+        <button type="submit" name="action" value="Stats">Stats</button>
+        <button type="submit" name="action" value="Path">Path</button>
+        
+    </form>
+
+    <div class="output">
+        {% if message %}
+            <p><strong>Result:</strong> {{ message }}</p>
+        {% endif %}
+        {% if traversal %}
+            <p><strong>Output:</strong> {{ traversal }}</p>
+        {% endif %}
+        {% if image_file %}
+            <h3>BST Graphical View:</h3>
+            <img src="{{ image_file }}" alt="BST Graph">
+        {% endif %}
+    </div>
+</body>
+</html>
