@@ -41,20 +41,9 @@ Now open your browser and visit:
 http://127.0.0.1:5000
 
 
-
-## Project Structure
-Make-BST/
-│── app.py              # Flask app
-│── bst.py              # BST logic
-│── templates/          # HTML templates
-│── static/             # CSS/JS files
-│── requirements.txt    # Python dependencies
-│── README.md           # Project details
-
-
 ## Tech Stack
 - Python + Flask   
 - Graphviz (tree visualization)  
-- HTML/CSS (frontend)  
+- HTML/CSS   
 
 This project is mainly for learning and experimenting with BSTs and Flask. If you’re trying it out, feel free to clone and play around with it!
